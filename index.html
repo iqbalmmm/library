@@ -34,26 +34,29 @@
         <div class="management book">
             <ul class="book">
             <li class="management-item">
-                <a href="management-link">Pengembalian buku</a></ul>
+                <h5>Pengembalian buku</h5>
                 <br/>
                 <input type="text" id="input-return-book-id" name="idReturn">
                 <button id="button-borrow" onclick="returnBook()">Click</button>
+                <!-- <script>
+                    document.getElementById("return-library-book-list").innerHTML = getBookOutLibraryList();
+                </script> -->
             </li>
             <li class="management-item">
-                <a href="management-link">Peminjaman buku</a>
+                <h5>Peminjaman buku</h5>
                 <br />
                 <input type="text" id="input-borrow-book-id" name="idBorrow">
                 <button id="button-borrow" onclick="borrowBook()">Try it</button>
             </li>
             <li class="management-item">
-                <a href="management-link">Daftar buku di dalam perpustakaan</a>
+                <h5>Daftar buku di dalam perpustakaan</h5>
                 <p id="in-library-book-list"></p>
                 <script>
                     document.getElementById("in-library-book-list").innerHTML = getBookInLibraryList();
                 </script>
             </li>
             <li class="management-item">
-                    <a href="management-link">Daftar buku di luar perpustakaan</a>
+                    <h5>Daftar buku di luar perpustakaan</h5>
                     <p id="out-library-book-list"></p>
                     <script>
                         document.getElementById("out-library-book-list").innerHTML = getBookOutLibraryList();
